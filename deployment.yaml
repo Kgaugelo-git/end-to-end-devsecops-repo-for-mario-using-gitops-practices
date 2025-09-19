@@ -12,10 +12,10 @@ spec:
       labels:
         app: supermariogame
     spec:
-      containers:
-      - image: raghuthesecurityexpert/supermariogitopsproject:2
-        name: supermariogame-container
-        ports:
+    containers:
+      -name: supermariogame-container
+      image: kgau711/supermario:2
+      ports:
         - containerPort: 8080
  
 ---
@@ -28,6 +28,6 @@ spec:
     app: supermariogame
   ports:
   - protocol: TCP
-    port: 8600  # <-- Change this line to your desired port
+    port: 8080  # <-- Change this line to your desired port
     targetPort: 8080
   type: LoadBalancer
