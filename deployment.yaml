@@ -14,7 +14,7 @@ spec:
     spec:
     containers:
       -name: supermariogame-container
-      image: kgau711/supermario:6
+      image: kgau711/supermario:7
       ports:
         - containerPort: 8080
  
